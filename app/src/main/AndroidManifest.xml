@@ -18,13 +18,16 @@
             </intent-filter>
         </activity> -->
 
-        <activity android:name=".book.part12.ListViewSample">
+        <activity android:name=".book.part17.TabSample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".book.part12.ListViewSample"/>
+        <activity android:name=".book.part12.ListCustomViewSample"/>
     </application>
 
 </manifest>

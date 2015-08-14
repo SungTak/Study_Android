@@ -3,12 +3,36 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/first_part_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""/>
+            android:text="hahahah"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_part_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="헐 어령움"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_part_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3번째"/>
+
     </LinearLayout>
 </FrameLayout>

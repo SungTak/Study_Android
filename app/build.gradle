@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.yst.study"
-        minSdkVersion 16 // 최소버전임!! 4.1.2(22->16으로 바꿈)
+        minSdkVersion 16 // SDK!! 4.1.2(22->16)
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"

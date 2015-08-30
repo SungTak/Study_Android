@@ -15,7 +15,7 @@ public class SplashSample extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_loading_layout);
 
-        // 2.5ÃÊµÚ¿¡ ¸ŞÀÎ ·Îµù ÀÌ¹ÌÁö Á¾·á
+        // 2.5ì´ˆ ë’¤ì— ë©”ì¸ ë¡œë”© ì´ë¯¸ì§€ë¥¼ ì¢…ë£Œí•¨
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

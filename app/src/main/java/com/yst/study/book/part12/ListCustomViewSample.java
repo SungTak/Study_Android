@@ -26,7 +26,7 @@ public class ListCustomViewSample extends Activity {
 
         for (int i = 0; i < 10; i ++) {
             System.out.print(i);
-            CustomView customView = new CustomView(i, i + "m¹øÂ° °Ô½Ã¹°ÀÔ´Ï´Ù");
+            CustomView customView = new CustomView(i, i + "ë²ˆì§¸ ê²Œì‹œë¬¼");
             customViews.add(customView);
         }
 
@@ -41,9 +41,9 @@ public class ListCustomViewSample extends Activity {
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
-                .setMessage("Á¾·áÇÏ½Ã°Ú½À´Ï±î?")
-                .setPositiveButton("È®ÀÎ", closeAppEvent)
-                .setNegativeButton("Ãë¼Ò", cancelCloseAppEvent)
+                .setMessage("ì¢…ë£Œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?")
+                .setPositiveButton("ì¢…ë£Œ", closeAppEvent)
+                .setNegativeButton("ì·¨ì†Œ", cancelCloseAppEvent)
                 .show();
     }
 

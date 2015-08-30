@@ -27,9 +27,9 @@ public class ListViewSample extends Activity {
 
     private List<String> createPeoples() {
         List<String> peoples = new ArrayList<>();
-        peoples.add("À±¼ºÅ¹");
-        peoples.add("¾ÈÁ¤¹Î");
-        peoples.add("±èÅÂÈ¯");
+        peoples.add("ìœ¤ì„±íƒ");
+        peoples.add("ì•ˆì •ë¯¼");
+        peoples.add("ê¹€íƒœí™˜");
         peoples.add("english name");
 
         return peoples;

@@ -3,8 +3,8 @@ package com.yst.study.book.part17;
 import android.support.v4.app.FragmentActivity;
 
 /**
- * v4¸¦ ¾²±âÀ§ÇØ¼± SDK¸Å´ÏÀú¿¡¼­ support liberary¸¦ ´Ù¿î
- * build.gradleÀÇ µğÆæ´ø½Ã¿¡ °ü·Ã ³»¿ë Ãß°¡ ÈÄ ¸®ºôµå
+ * v4ë¥¼ ì´ìš©í•˜ë ¤ë©´ SDKë§¤ë‹ˆì €ì—ì„œ support liberaryë‹¤ìš´ë¡œë“œ
+ * build.gradleì˜ ë””íœë˜ì‹œì— compile 'com.android.support:appcompat-v7:22.2.1'ë¥¼ ì ìŒ
  *
  * Created by Naver on 2015-08-30.
  */

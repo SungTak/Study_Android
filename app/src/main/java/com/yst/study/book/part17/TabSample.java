@@ -19,7 +19,7 @@ public class TabSample extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // ¸ŞÀÎ ·ÎµùÀÌ¹ÌÁö ¶ç¿ò
+        // ë©”ì¸ ë¡œë”©ì´ë¯¸ì§€ ë„ì›€
         startActivity(new Intent(this, SplashSample.class));
 
         TabHost tabHost = getTabHost();

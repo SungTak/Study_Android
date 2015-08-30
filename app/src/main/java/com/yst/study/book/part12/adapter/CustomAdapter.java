@@ -23,9 +23,9 @@ public class CustomAdapter extends BaseAdapter {
 
     /**
      *
-     * @param context ¸®½ºÆ®ºä¸¦ °¡Áö°í ÀÖ´Â ³à¼®ÀÎµí..
-     * @param layout Ä¿½ºÅÒ Àû¿ë ºä(¸ñ·Ï ¿ä¼Ò)
-     * @param customViews Ä¿½ºÅÒ ¸ğµ¨ ¸®½ºÆ®
+     * @param context ë¦¬ìŠ¤íŠ¸ë·°ë¥¼ ê°€ì§€ê³  ìˆëŠ” ë…€ì„ì¸ë“¯..
+     * @param layout ì»¤ìŠ¤í…€ ì ìš© ë·°(ëª©ë¡ ìš”ì†Œ)
+     * @param customViews ì»¤ìŠ¤í…€ ëª¨ë¸ ë¦¬ìŠ¤íŠ¸
      */
     public CustomAdapter(Context context, int layout, List<CustomView> customViews) {
         this.context = context;

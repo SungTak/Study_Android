@@ -1,6 +1,8 @@
 package com.yst.study.book.part12;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -34,4 +36,28 @@ public class ListCustomViewSample extends Activity {
         customListView.setAdapter(customAdapter);
 
     }
+
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("종료하시겠습니까?")
+                .setPositiveButton("확인", closeAppEvent)
+                .setNegativeButton("취소", cancelCloseAppEvent)
+                .show();
+    }
+
+    private DialogInterface.OnClickListener closeAppEvent = new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            finish();
+        }
+    };
+
+    private DialogInterface.OnClickListener cancelCloseAppEvent = new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            dialog.cancel();
+        }
+    };
 }

@@ -31,6 +31,8 @@
         <activity android:name=".book.part12.ListViewSample"/>
         <activity android:name=".book.part12.ListCustomViewSample"/>
         <activity android:name=".sample.webview.WebViewSample"/>
+        <activity android:name=".sample.splash.SplashSample" />
+        <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 이 옵션은 검은색 바탕으로 전환시킴.-->
     </application>
 
 </manifest>

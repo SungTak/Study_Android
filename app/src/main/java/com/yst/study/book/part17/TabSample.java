@@ -1,12 +1,15 @@
 package com.yst.study.book.part17;
 
 import android.app.TabActivity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.widget.TabHost;
 
 import com.yst.study.R;
+import com.yst.study.sample.splash.SplashSample;
 
 /**
  * Created by Naver on 2015-08-14.
@@ -15,6 +18,9 @@ public class TabSample extends TabActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // 메인 로딩이미지 띄움
+        startActivity(new Intent(this, SplashSample.class));
 
         TabHost tabHost = getTabHost();
 
@@ -56,5 +62,8 @@ public class TabSample extends TabActivity {
         tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("linker")
                 .setContent(R.id.third_part_layout));
+
+//        final Intent intent = getIntent();
+//        if (intent.hasExtra(SWit))
     }
 }

@@ -21,6 +21,7 @@ public class TabSample extends TabActivity {
         LayoutInflater inflater = LayoutInflater.from(this);
         inflater.inflate(R.layout.frame_main_board, tab.getTabContentView(), true);
 
+        ////// String List View
         Intent listViewIntent = new Intent(this, com.yst.study.book.part12.ListViewSample.class);
         listViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
@@ -28,15 +29,22 @@ public class TabSample extends TabActivity {
                 .setIndicator("normal")
                 .setContent(listViewIntent));
 
-        //////
+        Intent webViewIntent = new Intent(this, com.yst.study.sample.webview.WebViewSample.class);
+        webViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+
+        tab.addTab(tab.newTabSpec("tag")
+                .setIndicator("normal")
+                .setContent(webViewIntent));
+
+        ////// Custom List View
         Intent customListViewIntent = new Intent(this, com.yst.study.book.part12.ListCustomViewSample.class);
-        listViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        customListViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
         tab.addTab(tab.newTabSpec("tag")
                 .setIndicator("Custom View")
                 .setContent(customListViewIntent));
 
-        ///////
+        /////// Tab Test
         tab.addTab(tab.newTabSpec("tag")
                 .setIndicator("normal")
                 .setContent(R.id.first_part_layout));

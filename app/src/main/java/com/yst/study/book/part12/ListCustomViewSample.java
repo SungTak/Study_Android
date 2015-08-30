@@ -24,7 +24,7 @@ public class ListCustomViewSample extends Activity {
 
         for (int i = 0; i < 10; i ++) {
             System.out.print(i);
-            CustomView customView = new CustomView(i, i + "번째 게시물입니다");
+            CustomView customView = new CustomView(i, i + "m번째 게시물입니다");
             customViews.add(customView);
         }
 

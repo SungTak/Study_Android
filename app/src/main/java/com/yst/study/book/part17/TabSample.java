@@ -16,23 +16,23 @@ public class TabSample extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        TabHost tab = getTabHost();
+        TabHost tabHost = getTabHost();
 
         LayoutInflater inflater = LayoutInflater.from(this);
-        inflater.inflate(R.layout.frame_main_board, tab.getTabContentView(), true);
+        inflater.inflate(R.layout.frame_main_board, tabHost.getTabContentView(), true);
 
         ////// String List View
         Intent listViewIntent = new Intent(this, com.yst.study.book.part12.ListViewSample.class);
         listViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
-        tab.addTab(tab.newTabSpec("tag")
+        tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("normal")
                 .setContent(listViewIntent));
 
         Intent webViewIntent = new Intent(this, com.yst.study.sample.webview.WebViewSample.class);
         webViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
-        tab.addTab(tab.newTabSpec("tag")
+        tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("normal")
                 .setContent(webViewIntent));
 
@@ -40,21 +40,21 @@ public class TabSample extends TabActivity {
         Intent customListViewIntent = new Intent(this, com.yst.study.book.part12.ListCustomViewSample.class);
         customListViewIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
-        tab.addTab(tab.newTabSpec("tag")
+        tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("Custom View")
                 .setContent(customListViewIntent));
 
         /////// Tab Test
-        tab.addTab(tab.newTabSpec("tag")
+        tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("normal")
                 .setContent(R.id.first_part_layout));
 
-        tab.addTab(tab.newTabSpec("tag")
+        tabHost.addTab(tabHost.newTabSpec("tag")
                 .setIndicator("complier")
                 .setContent(R.id.second_part_layout));
 
-        tab.addTab(tab.newTabSpec("tag")
-            .setIndicator("linker")
-            .setContent(R.id.third_part_layout));
+        tabHost.addTab(tabHost.newTabSpec("tag")
+                .setIndicator("linker")
+                .setContent(R.id.third_part_layout));
     }
 }

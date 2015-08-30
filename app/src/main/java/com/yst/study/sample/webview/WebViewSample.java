@@ -2,7 +2,6 @@ package com.yst.study.sample.webview;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -21,20 +20,20 @@ public class WebViewSample extends Activity {
 
         webView = (WebView) findViewById(R.id.web_view);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadData("Á¦¸ñ", "text/html", "UTF-8");
+        webView.loadData("ì œëª©ì…ë‹ˆë‹¤", "text/html", "UTF-8");
         webView.loadUrl("http://m.naver.com");
     }
 
     /**
-     * ¾Èµå·ÎÀÌµå¿¡¼­ ¹é ¹öÆ° Å¬¸¯½Ã ÀÌº¥Æ® ¹ß»ı
+     * ë’¤ë¡œê°€ê¸° í´ë¦­ì‹œ ë’¤í˜ì´ì§€ë¡œ ì´ë™í•˜ê±°ë‚˜ ì¢…ë£Œ
      */
     @Override
     public void onBackPressed() {
-        // À¥ºä¿¡¼­ µÚ·Î°¥ À¥ÆäÀÌÁö°¡ ÀÖ´Ù¸é
+        // ë’¤í˜ì´ì§€ë¡œ ì´ë™
         if (webView.canGoBack()) {
             webView.goBack();
         } else {
-            // µÚ·Î°¥ ÆäÀÌÁö°¡ ¾ø´Ù¸é ¾ÛÀ» ÃÖ¼ÒÈ­? Á¾·á´Â ¾Æ´Ô
+            // ì•± ì¢…ë£Œ
             super.onBackPressed();
         }
     }

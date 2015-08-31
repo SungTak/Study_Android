@@ -38,4 +38,9 @@ public class ListViewSample extends Activity {
     private ArrayAdapter<String> createArrayAdapter(List<String> peoples) {
         return new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, peoples);
     }
+
+    @Override
+    public void onBackPressed() {
+        this.getParent().onBackPressed();
+    }
 }

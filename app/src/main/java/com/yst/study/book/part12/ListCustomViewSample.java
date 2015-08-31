@@ -37,27 +37,8 @@ public class ListCustomViewSample extends Activity {
 
     }
 
-
     @Override
     public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                .setMessage("종료하시겠습니까?")
-                .setPositiveButton("종료", closeAppEvent)
-                .setNegativeButton("취소", cancelCloseAppEvent)
-                .show();
+        this.getParent().onBackPressed();
     }
-
-    private DialogInterface.OnClickListener closeAppEvent = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-            finish();
-        }
-    };
-
-    private DialogInterface.OnClickListener cancelCloseAppEvent = new DialogInterface.OnClickListener() {
-        @Override
-        public void onClick(DialogInterface dialog, int which) {
-            dialog.cancel();
-        }
-    };
 }

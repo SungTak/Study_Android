@@ -22,6 +22,11 @@ public class CounterFragment extends android.app.Fragment {
         Button incrementBtn = (Button) root.findViewById(R.id.part20_button_increment);
         final TextView textCounter = (TextView) root.findViewById(R.id.part20_text_counter);
 
+        // 번들에서 데이터를 가져옴 onSaveInstanceState에서 저장됨
+        if (savedInstanceState != null) {
+            textCounter.setText(savedInstanceState.getInt("counter"));
+        }
+
         incrementBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,5 +36,13 @@ public class CounterFragment extends android.app.Fragment {
         });
 
         return root;
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        TextView textView = (TextView) getView().findViewById(R.id.part20_text_counter);
+        outState.putInt("counter", Integer.parseInt(textView.getText().toString()));
     }
 }

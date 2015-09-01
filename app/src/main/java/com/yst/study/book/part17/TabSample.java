@@ -46,7 +46,7 @@ public class TabSample extends TabActivity {
                 .setContent(webViewIntent));
 
         //// fragment sample
-        Intent fragmentIntent = new Intent(this, com.yst.study.book.part20.ReuseFragment.class);
+        Intent fragmentIntent = new Intent(this, com.yst.study.book.part20.ReplaceFragmentSample.class);
         fragmentIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
         tabHost.addTab(tabHost.newTabSpec("tag")

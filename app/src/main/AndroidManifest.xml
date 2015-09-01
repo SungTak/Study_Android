@@ -33,7 +33,7 @@
         <activity android:name=".sample.webview.WebViewSample"/>
         <activity android:name=".sample.splash.SplashSample" />
         <activity android:name=".book.part20.FragmentSample" />
-        <activity android:name=".book.part20.ReuseFragment" />
+        <activity android:name=".book.part20.ReplaceFragmentSample" />
         <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 이 옵션은 검은색 바탕으로 전환시킴.-->
     </application>
 

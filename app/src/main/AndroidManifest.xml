@@ -20,7 +20,9 @@
             </intent-filter>
         </activity> -->
 
-        <activity android:name=".book.part17.TabSample">
+        <!--
+        <activity android:name=".book.part17.TabSample"> -->
+        <activity android:name=".doit.book.chapter2.part1.ScrollViewSample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,6 +36,9 @@
         <activity android:name=".sample.splash.SplashSample" />
         <activity android:name=".book.part20.FragmentSample" />
         <activity android:name=".book.part20.ReplaceFragmentSample" />
+
+        <!-- support v7의 ActionBarActivity를 사용할때 테마 추가안하면 에러뜸 -->
+        <activity android:name=".doit.book.part3.NewActivitySample" android:theme="@style/Theme.AppCompat" />
         <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 이 옵션은 검은색 바탕으로 전환시킴.-->
     </application>
 

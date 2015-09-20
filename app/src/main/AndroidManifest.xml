@@ -22,7 +22,7 @@
 
         <!--
         <activity android:name=".book.part17.TabSample"> -->
-        <activity android:name=".doit.book.chapter2.part1.ScrollViewSample">
+        <activity android:name=".doit.book.chapter2.part4.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
